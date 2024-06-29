@@ -1,0 +1,61 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root{
+    --offcanvas-width:270px;
+    --topNavbarHeight:56px;
+}
+.sidebar-nav{
+    width:var(--offcanvas-width);
+   
+    /* height: 100%; */
+    /* min-width:270px;
+    max-width: 270px; */
+   
+}
+.maincontent{
+    margin-top: 100px;
+   
+}
+
+@media screen and (min-width:992px) {
+   body{
+    overflow: auto !important;
+   }
+
+   .offcanvas-backdrop::before{
+    display: none;
+   }
+    .maincontent{
+        margin-left: 180px;
+    }
+    .sidebar-nav{
+
+        transform: none;
+        visibility: visible !important;
+        /* margin-top: var(--topNavbarHeight) !important; */
+        
+        top:56px;
+        height: calc(100% - var(--topNavbarHeight)); 
+       
+
+    }
+}     
+  
+
+   
+
+ /* .sidebar-nav{
+    max-width:270px;
+    min-width: 270px;
+    visibility: hidden;
+    
+ }   
+ @media (min-width:992px){ 
+    .sidebar-nav{
+        transform: none;
+        visibility:  visible!important;
+        /* width: 270px;
+        max-width: 270px; */
+    /* }
+   
+ } */ 

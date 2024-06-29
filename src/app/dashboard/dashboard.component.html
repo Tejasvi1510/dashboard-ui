@@ -1,0 +1,133 @@
+
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+         <!--offcanvas trigger-->
+
+         <button class="btn " type="button" 
+            data-bs-toggle="offcanvas" 
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+               
+          <!--offcanvas trigger-->
+
+
+
+          <a class="navbar-brand fw-bold me-auto" href="#">BlackCoffer</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+           
+                <form class="d-flex ms-auto" role="search">
+                    <div class="input-group my-3 my-lg-0">
+                        <input type="text" class="form-control" placeholder="Search Here" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-primary" type="button" id="button-addon2">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                    
+                </form>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+             
+             
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person-fill"></i>
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-end ">
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+
+                      </ul>
+                    </li>
+                   
+                  </ul>
+             
+             
+          </div>
+        </div>
+      </nav>
+
+
+
+<!--Offcanvas-->
+
+
+<div class="offcanvas offcanvas-start sidebar-nav bg-dark text-white" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <!-- <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div> -->
+  <div class="offcanvas-body p-0">
+       <nav class="navbar-dark">
+          <ul class="navbar-nav mx-5 my-4">
+             <li>
+                <a href="#" class="nav-link ">
+                  <span class="me-2"><i class="bi bi-speedometer"></i></span>
+                  <span>Dashboard</span>
+                </a>
+             </li>
+             <li >
+              <a routerLink="year" class="nav-link" >
+               
+                <span >End Year</span>
+              </a>
+           </li>
+          
+           <li>
+            <a routerLink="topic"  class="nav-link ">
+             
+              <span>Topics</span>
+            </a>
+         </li>
+         <li>
+          <a href="#" routerLink="sector" class="nav-link ">
+           
+            <span>Sector</span>
+          </a>
+       </li>
+      
+      <li>
+        <a href="#" routerLink="pestal" class="nav-link ">
+        
+          <span>Pest</span>
+        </a>
+    </li>
+    <li>
+      <a href="#" routerLink="source" class="nav-link ">
+       
+        <span>Source</span>
+      </a>
+   </li>
+   <li>
+      <a href="#" routerLink="swot" class="nav-link ">
+      
+        <span>SWOT</span>
+      </a>
+    </li>
+    <li>
+      <a routerLink="country" href="#" class="nav-link ">
+      
+        <span>Country</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" routerLink="city" class="nav-link ">
+      
+        <span>City</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+   
+   
+  </div>
+</div>
+    <div class="maincontent">
+      <router-outlet></router-outlet>
+    </div>
+</div>  
+
+ 

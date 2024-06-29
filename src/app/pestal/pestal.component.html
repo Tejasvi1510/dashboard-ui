@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-lg-12">
+          <label for="filterSelect">Select Pestal:</label>
+          <select
+            id="filterSelect"
+            class="form-control"
+            (change)="onFilterChange($event)"
+          >
+            <option value="all">All </option>
+            
+            <option *ngFor="let pestal of uniquePestal" [value]="pestal">
+              {{ pestal }}
+            </option>
+          </select>
+        </div>
+      </div>
+    <!--End of dropdown-->
+        <div class="row">
+            <div class="col-lg-12">
+                <canvas id="lineChart"></canvas>
+            </div><br>
+            <div class="text-center">
+              <span class="small ">Regionwise intensity,relevance,likelihood(Region on X-axis)</span>
+              <br><br>
+            </div>
+           
+            
+        </div>
+        
+
+    
+</div>
+
+
+
