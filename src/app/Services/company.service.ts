@@ -13,9 +13,9 @@ export class CompanyService {
   {
     return this.http.get(this.baseUrl+`/getData`);
   }
-  public getDataByRegion()
+  public getAllDataByRegion()
   {
-    return this.http.get(this.baseUrl+`/getByRegion`);  
+    return this.http.get(this.baseUrl+`/getDataBy/all/all`);
   }
  //get data by filter
  public getDataByFilter(filterName:any,data:any)

@@ -32,7 +32,7 @@ export class SectorComponent implements OnInit, OnDestroy {
       }
     );
 
-    this.companyService.getDataByRegion().subscribe(
+    this.companyService.getAllDataByRegion().subscribe(
       (resp) => {
         console.log(resp);
         this.dataByRegion = resp;
